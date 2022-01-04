@@ -1,31 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
 
-import {Home} from './Home';
-import {Department} from './Department';
-import {Employee} from './Employee';
-import {Navigation} from './Navigation';
+import { Home } from './Home';
+import { Department } from './Department';
+import { Employee } from './Employee';
+import { Navigation } from './Navigation';
 
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
-  return (
-    <BrowserRouter>
-    <div className="container">
-     <h3 className="m-3 d-flex justify-content-center">
-       React JS Tutorial
-     </h3>
+    return (
+        <BrowserRouter>
+            <div className="container">
+                <h3 className="m-3 d-flex justify-content-center">
+                    React, Web API, SQL Server App Demo
+                </h3>
 
-     <Navigation/>
+                <Navigation />
 
-     <Switch>
-       <Route path='/' component={Home} exact/>
-       <Route path='/department' component={Department}/>
-       <Route path='/employee' component={Employee}/>
-     </Switch>
-    </div>
-    </BrowserRouter>
-  );
+                <Switch>
+                    <Route path='/' component={Home} exact />
+                    <Route path='/department' component={Department} />
+                    <Route path='/employee' component={Employee} />
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

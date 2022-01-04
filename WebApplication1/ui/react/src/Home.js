@@ -1,9 +1,9 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 
-export class Home extends Component{
+export class Home extends Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="mt-5 d-flex justify-content-left">
                 This is Home page.
             </div>
